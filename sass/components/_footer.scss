@@ -1,0 +1,63 @@
+/*Футер*/
+.footer {
+  padding: 60px 0px;
+  background-color: $footer-background-color;
+}
+
+.footer-site {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer.navigation {
+  width: 231px;
+}
+
+.footer-logo {
+  display: block;
+  color: $main-lite-color;
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.contacts-item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.location.second {
+  line-height: 1.71;
+  font-style: normal;
+  color: $main-lite-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.phone.second,
+.e-mail.second {
+  line-height: 1.71;
+  font-style: normal;
+  color: $footer-phone-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-footer__social-links {
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-lite-color;
+}

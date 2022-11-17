@@ -1,0 +1,15 @@
+.site-header {
+  border-bottom: 1px solid $header-border-color;
+}
+.contacts-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-list__item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-list__item:first-child {
+  margin-right: 30px;
+}

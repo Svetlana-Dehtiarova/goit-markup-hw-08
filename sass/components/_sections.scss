@@ -1,0 +1,23 @@
+/* Секції*/
+/*Головна сторінка*/
+.section-title,
+.team__title,
+.benefits__subtitle {
+  color: $title-text-color;
+}
+
+.section-title,
+.team__title,
+.benefits__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-subtitle.second {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+/*---Команда---*/
+.team {
+  background-color: $second-background-color;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item {
+  flex-basis: calc(33.3333333333% - 30px);
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.team__item {
+  background-color: $main-lite-color;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  color: $title-text-color;
+  text-align: center;
+  padding: 30px 24px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-card__specialty {
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 10px;
+}

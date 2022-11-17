@@ -1,0 +1,56 @@
+/*-----Переваги-----*/
+.benefits__subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-subtitle.second {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.benefits {
+  padding-bottom: 0px;
+}
+
+.benefits__list {
+  display: flex;
+  gap: 30px;
+}
+
+.benefits__item {
+  width: 270px;
+  &:not(:last-child()) {
+    margin-right: 30px;
+  }
+}
+
+.benefits__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $second-background-color;
+  margin-bottom: 30px;
+}
+.benefits__title--hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.benefits__text {
+  line-height: 1.71;
+}
