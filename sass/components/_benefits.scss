@@ -18,8 +18,12 @@
 }
 
 .benefits__list {
-  display: flex;
-  gap: 30px;
+  display: block;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+   gap: 30px;
+}
 }
 
 .benefits__item {
