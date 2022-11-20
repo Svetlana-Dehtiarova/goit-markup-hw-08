@@ -1,0 +1,19 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $accent-background-color;
+}
+
+.footer {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    @media screen and (max-width:767px) {
+        display: block;
+    }
+    
+}
+
+
+

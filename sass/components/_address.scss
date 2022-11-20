@@ -1,0 +1,38 @@
+.address__item {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+        @media screen and (max-width:1199px) {
+            &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            text-align: center;
+        }
+}
+
+.address__link {
+    color: $footer-color;
+    font-style: normal;
+    @include transitionM(color);
+    &--difference {
+        color: $white-color;
+        @include transitionM(color);
+    }
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+.footer__contacts {
+    @media screen and (max-width:1199px) {
+            margin-bottom: 60px;
+        }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-left: 76px;
+    }
+}
+

@@ -1,0 +1,78 @@
+.clients__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-text-color;
+    line-height: 1.1;
+    @media screen and (min-width:1200px) {
+            font-size: 36px;
+            line-height: 1.2;
+        }
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients__link {
+    display: inline-flex;
+    height: 92px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: $icon-social;
+    border: 1px solid $icon-social;
+    border-radius: 4px;
+    @include transitionM(color);
+    @include transitionM(border);
+    &:hover,
+    &:focus {
+        border-radius: 4px;
+        border: 1px solid $accent-color;
+        color: $accent-color;
+        }
+}
+
+.clients__icon {
+    fill: currentColor;
+}
+
+.clients__item {
+    @media screen and (max-width:767px) {
+            width: calc((100% - 1 * 30px) / 2);
+    
+            &:not(:nth-last-child(-n + 2)) {
+                margin-bottom: 30px;
+            }
+    
+            &:nth-child(2n+1) {
+                margin-right: 30px;
+            }
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc((100% - 2 * 30px) / 3);
+    
+            &:not(:nth-last-child(-n + 3)) {
+                margin-bottom: 30px;
+            }
+    
+            &:not(:nth-child(3n)) {
+                margin-right: 30px;
+            }
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 5 * 30px) / 6);
+    
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+}

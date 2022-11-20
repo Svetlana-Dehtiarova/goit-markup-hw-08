@@ -1,0 +1,3 @@
+@mixin transitionM($type) {
+    transition: $type $time $cubic;
+};

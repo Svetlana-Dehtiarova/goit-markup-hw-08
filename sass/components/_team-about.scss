@@ -1,0 +1,60 @@
+.team-about {
+    padding: 30px 0 24px 0;
+    @media screen and (min-width:1200px) {
+            padding: 30px 0;
+        }
+}
+
+.team-about__name {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-text-color;
+    line-height: 1.2;
+}
+
+.team-about__specialization {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+}
+
+.team-about__list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-about__link {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    color: $icon-social;
+    border: none;
+    border-radius: 50%;
+    @include transitionM(background-color);
+    @include transitionM(color);
+
+    &:hover,
+    &:focus {
+        border: none;
+        border-radius: 50%;
+        background-color: $accent-color;
+        color: $white-color;
+    }
+}
+
+.team-about__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-about__icon {
+    fill: currentColor;
+}

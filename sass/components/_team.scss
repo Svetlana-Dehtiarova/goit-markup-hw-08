@@ -1,35 +1,65 @@
-/*---Команда---*/
 .team {
-  background-color: $second-background-color;
+    background-color: $portfolio-background;
 }
 
 .team__list {
-  display: flex;
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+    @media screen and (min-width:1200px) {
+            display: flex;
+        }
+}
+
+.team__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-text-color;
+    line-height: 1.1;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.2;
+        }
 }
 
 .team__item {
-  flex-basis: calc(33.3333333333% - 30px);
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
+    background-color: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (max-width:767px) {
+            width: 100%;
+    
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc((100% - 1 * 30px) / 2);
+    
+            &:not(:nth-last-child(-n + 2)) {
+                margin-bottom: 30px;
+            }
+    
+            &:not(:nth-child(2n)) {
+                margin-right: 30px;
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 3 * 30px) / 4);
+    
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
 }
 
-.team__item {
-  background-color: $main-lite-color;
-  border-radius: 0px 0px 4px 4px;
-}
 
-.team-card {
-  color: $title-text-color;
-  text-align: center;
-  padding: 30px 24px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-card__specialty {
-  color: $primary-text-color;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-top: 10px;
-}
